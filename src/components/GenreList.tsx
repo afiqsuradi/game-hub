@@ -1,4 +1,4 @@
-import { HStack, Image, List, ListItem, Spinner, Text } from "@chakra-ui/react";
+import { Button, HStack, Image, List, ListItem } from "@chakra-ui/react";
 import useGenre from "../hooks/useGenre";
 import GenreListSkeleton from "./GenreListSkeleton";
 
@@ -25,7 +25,9 @@ function GenreList() {
               boxSize="32px"
               borderRadius={8}
             />
-            <Text fontSize="lg">{genre.name}</Text>
+            <Button variant="link" fontSize="lg">
+              {genre.name}
+            </Button>
           </HStack>
         </ListItem>
       ))}
