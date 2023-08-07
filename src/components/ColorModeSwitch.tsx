@@ -9,7 +9,9 @@ function ColorModeSwitch() {
         onChange={toggleColorMode}
         colorScheme="green"
       />
-      <Text>{colorMode[0].toUpperCase() + colorMode.slice(1)} Mode</Text>
+      <Text whiteSpace="nowrap">
+        {colorMode[0].toUpperCase() + colorMode.slice(1)} Mode
+      </Text>
     </HStack>
   );
 }
