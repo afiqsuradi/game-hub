@@ -10,10 +10,6 @@ export interface Game {
   parent_platforms: { platform: Platform }[];
 }
 
-interface Error {
-  message: string;
-}
-
 const useGames = (gameQuery: GameQuery | null) => {
   const { data, error, isLoading } = useData<Game>(
     "/games",
