@@ -23,7 +23,6 @@ function GameGrid({ gameQuery }: Props) {
           xl: "repeat(4, 1fr)",
         }}
         gap={"2em"}
-        padding={"2em"}
       >
         {isLoading &&
           skeletons.map((skeleton) => (

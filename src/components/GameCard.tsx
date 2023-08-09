@@ -11,7 +11,11 @@ interface Props {
 function GameCard({ game }: Props) {
   return (
     <Card>
-      <Image src={getCroppedImageUrl(game.background_image)} boxSize={"auto"} />
+      <Image
+        src={getCroppedImageUrl(game.background_image)}
+        boxSize={"auto"}
+        objectFit="cover"
+      />
       <CardBody>
         <Heading fontSize={"2xl"}>{game.name}</Heading>
         <HStack justifyContent="space-between">
